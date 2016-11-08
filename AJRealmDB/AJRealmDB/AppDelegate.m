@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AJDBManager.h"
+#import "Base64.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSLog(@"%@", NSHomeDirectory());
+    
+    // 加密KEY,一个数据库，加密Key必须唯一,否则读取不了数据
+    NSString *sourceKey = [@"A1234567890987654321qwertyuioplkjhgfdsazxcvbnm8gruodchgwpjsziub8" base64EncodedString];
+    NSData *seckey = [NSData dataWithBase64EncodedString:sourceKey];
+    
+    NSLog(@"#secKey-data#: %@", seckey); // 在电脑上读取加密后的数据库时可以使用这串16进制Key
+    
+//    [AJDBManager configSecurityKey:seckey];
+    
     return YES;
 }
 

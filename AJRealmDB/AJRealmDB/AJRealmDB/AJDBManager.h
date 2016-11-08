@@ -12,6 +12,14 @@
 
 @interface AJDBManager : NSObject
 
+
+/**
+ * 设置数据库加密Key,全局只需设置一次。如果不设置，默认不加密
+ * 一个数据库只对应一个Key
+ @param secKey 加密Key
+ */
++ (void)configSecurityKey:(NSData *)secKey;
+
 /**
  *  写入一条数据
  *

@@ -7,7 +7,6 @@
 //
 
 #import "AJDBManager.h"
-#import "Base64.h"
 
 @interface AJDBManager()
 @property (nonatomic,strong) RLMRealmConfiguration *realmConfig;
@@ -22,21 +21,25 @@
     dispatch_once( &onceToken, ^{
         
         instance = [[AJDBManager alloc] init];
-    
-        
-        // 加密KEY,一个数据库，加密Key必须唯一,否则读取不了数据
-        NSString *sourceKey = [@"A1234567890987654321qwertyuioplkjhgfdsazxcvbnm8gruodchgwpjsziub8" base64EncodedString];
-        NSData *seckey = [NSData dataWithBase64EncodedString:sourceKey];
-
-        NSLog(@"$$: %@", seckey);
-        
-        // 数据库配置
-        instance.realmConfig = [RLMRealmConfiguration defaultConfiguration];
-        instance.realmConfig.encryptionKey = seckey;
         
     });
     
     return instance;
+}
+
++ (void)configSecurityKey:(NSData *)secKey
+{
+    if (secKey == nil || [secKey length] == 0) {
+        return;
+    }
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        // 数据库配置
+        [self sharedInstance].realmConfig = [RLMRealmConfiguration defaultConfiguration];
+        [self sharedInstance].realmConfig.encryptionKey = secKey;
+    });
 }
 
 + (void)checkClazz:(Class)clazz
