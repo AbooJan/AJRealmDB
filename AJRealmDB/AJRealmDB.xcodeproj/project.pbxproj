@@ -12,50 +12,24 @@
 		EBF344471DD0584600CEEA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF344451DD0584600CEEA30 /* Main.storyboard */; };
 		EBF344491DD0584600CEEA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF344481DD0584600CEEA30 /* Assets.xcassets */; };
 		EBF3444C1DD0584600CEEA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF3444A1DD0584600CEEA30 /* LaunchScreen.storyboard */; };
-		EBF344571DD0584600CEEA30 /* AJRealmDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344561DD0584600CEEA30 /* AJRealmDBUITests.m */; };
 		EBF3446B1DD0588C00CEEA30 /* AJDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344631DD0588C00CEEA30 /* AJDBManager.m */; };
-		EBF3446C1DD0588C00CEEA30 /* AJDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344631DD0588C00CEEA30 /* AJDBManager.m */; };
 		EBF3446D1DD0588C00CEEA30 /* AJDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344651DD0588C00CEEA30 /* AJDBObject.m */; };
-		EBF3446E1DD0588C00CEEA30 /* AJDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344651DD0588C00CEEA30 /* AJDBObject.m */; };
 		EBF3446F1DD0588C00CEEA30 /* AJSortFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344671DD0588C00CEEA30 /* AJSortFilter.m */; };
-		EBF344701DD0588C00CEEA30 /* AJSortFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344671DD0588C00CEEA30 /* AJSortFilter.m */; };
 		EBF344711DD0588C00CEEA30 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3446A1DD0588C00CEEA30 /* Base64.m */; };
-		EBF344721DD0588C00CEEA30 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3446A1DD0588C00CEEA30 /* Base64.m */; };
 		EBF344871DD058B600CEEA30 /* CommentBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344741DD058B600CEEA30 /* CommentBean.m */; };
-		EBF344881DD058B600CEEA30 /* CommentBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344741DD058B600CEEA30 /* CommentBean.m */; };
 		EBF344891DD058B600CEEA30 /* DatabaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344761DD058B600CEEA30 /* DatabaseTestViewController.m */; };
-		EBF3448A1DD058B600CEEA30 /* DatabaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344761DD058B600CEEA30 /* DatabaseTestViewController.m */; };
 		EBF3448B1DD058B600CEEA30 /* DogBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344781DD058B600CEEA30 /* DogBean.m */; };
-		EBF3448C1DD058B600CEEA30 /* DogBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344781DD058B600CEEA30 /* DogBean.m */; };
 		EBF3448D1DD058B600CEEA30 /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447A1DD058B600CEEA30 /* MultiThreadViewController.m */; };
-		EBF3448E1DD058B600CEEA30 /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447A1DD058B600CEEA30 /* MultiThreadViewController.m */; };
 		EBF3448F1DD058B600CEEA30 /* NestedObjTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447C1DD058B600CEEA30 /* NestedObjTestViewController.m */; };
-		EBF344901DD058B600CEEA30 /* NestedObjTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447C1DD058B600CEEA30 /* NestedObjTestViewController.m */; };
 		EBF344911DD058B600CEEA30 /* QueryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447E1DD058B600CEEA30 /* QueryDataViewController.m */; };
-		EBF344921DD058B600CEEA30 /* QueryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3447E1DD058B600CEEA30 /* QueryDataViewController.m */; };
 		EBF344931DD058B600CEEA30 /* StudentBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344801DD058B600CEEA30 /* StudentBean.m */; };
-		EBF344941DD058B600CEEA30 /* StudentBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344801DD058B600CEEA30 /* StudentBean.m */; };
 		EBF344951DD058B600CEEA30 /* TestUserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344821DD058B600CEEA30 /* TestUserBean.m */; };
-		EBF344961DD058B600CEEA30 /* TestUserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344821DD058B600CEEA30 /* TestUserBean.m */; };
 		EBF344971DD058B600CEEA30 /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344841DD058B600CEEA30 /* UpdateViewController.m */; };
-		EBF344981DD058B600CEEA30 /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344841DD058B600CEEA30 /* UpdateViewController.m */; };
 		EBF344991DD058B600CEEA30 /* WeiboStatusBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344861DD058B600CEEA30 /* WeiboStatusBean.m */; };
-		EBF3449A1DD058B600CEEA30 /* WeiboStatusBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344861DD058B600CEEA30 /* WeiboStatusBean.m */; };
 		EBF3449D1DD0598F00CEEA30 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3449C1DD0598F00CEEA30 /* Realm.framework */; };
-		EBF3449E1DD0598F00CEEA30 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3449C1DD0598F00CEEA30 /* Realm.framework */; };
 		EBF344A21DD059B000CEEA30 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF344A01DD059B000CEEA30 /* libc++.tbd */; };
 		EBF344A51DD05ADD00CEEA30 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF344A41DD05ADD00CEEA30 /* libz.tbd */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EBF344531DD0584600CEEA30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBF344311DD0584600CEEA30 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EBF344381DD0584600CEEA30;
-			remoteInfo = AJRealmDB;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EBF344391DD0584600CEEA30 /* AJRealmDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJRealmDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,9 +40,6 @@
 		EBF344481DD0584600CEEA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBF3444B1DD0584600CEEA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF3444D1DD0584600CEEA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBF344521DD0584600CEEA30 /* AJRealmDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJRealmDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBF344561DD0584600CEEA30 /* AJRealmDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJRealmDBUITests.m; sourceTree = "<group>"; };
-		EBF344581DD0584600CEEA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF344621DD0588C00CEEA30 /* AJDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDBManager.h; sourceTree = "<group>"; };
 		EBF344631DD0588C00CEEA30 /* AJDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDBManager.m; sourceTree = "<group>"; };
 		EBF344641DD0588C00CEEA30 /* AJDBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDBObject.h; sourceTree = "<group>"; };
@@ -114,14 +85,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBF3444F1DD0584600CEEA30 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBF3449E1DD0598F00CEEA30 /* Realm.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -129,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				EBF3443B1DD0584600CEEA30 /* AJRealmDB */,
-				EBF344551DD0584600CEEA30 /* AJRealmDBUITests */,
 				EBF3443A1DD0584600CEEA30 /* Products */,
 				EBF3449F1DD059B000CEEA30 /* Frameworks */,
 			);
@@ -139,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				EBF344391DD0584600CEEA30 /* AJRealmDB.app */,
-				EBF344521DD0584600CEEA30 /* AJRealmDBUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,15 +138,6 @@
 				EBF3443D1DD0584600CEEA30 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBF344551DD0584600CEEA30 /* AJRealmDBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EBF344561DD0584600CEEA30 /* AJRealmDBUITests.m */,
-				EBF344581DD0584600CEEA30 /* Info.plist */,
-			);
-			path = AJRealmDBUITests;
 			sourceTree = "<group>";
 		};
 		EBF344611DD0588C00CEEA30 /* AJRealmDB */ = {
@@ -258,24 +210,6 @@
 			productReference = EBF344391DD0584600CEEA30 /* AJRealmDB.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EBF344511DD0584600CEEA30 /* AJRealmDBUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EBF3445E1DD0584600CEEA30 /* Build configuration list for PBXNativeTarget "AJRealmDBUITests" */;
-			buildPhases = (
-				EBF3444E1DD0584600CEEA30 /* Sources */,
-				EBF3444F1DD0584600CEEA30 /* Frameworks */,
-				EBF344501DD0584600CEEA30 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EBF344541DD0584600CEEA30 /* PBXTargetDependency */,
-			);
-			name = AJRealmDBUITests;
-			productName = AJRealmDBUITests;
-			productReference = EBF344521DD0584600CEEA30 /* AJRealmDBUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,11 +222,6 @@
 					EBF344381DD0584600CEEA30 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
-					};
-					EBF344511DD0584600CEEA30 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EBF344381DD0584600CEEA30;
 					};
 				};
 			};
@@ -310,7 +239,6 @@
 			projectRoot = "";
 			targets = (
 				EBF344381DD0584600CEEA30 /* AJRealmDB */,
-				EBF344511DD0584600CEEA30 /* AJRealmDBUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,13 +251,6 @@
 				EBF3444C1DD0584600CEEA30 /* LaunchScreen.storyboard in Resources */,
 				EBF344491DD0584600CEEA30 /* Assets.xcassets in Resources */,
 				EBF344471DD0584600CEEA30 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBF344501DD0584600CEEA30 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,37 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBF3444E1DD0584600CEEA30 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBF3446C1DD0588C00CEEA30 /* AJDBManager.m in Sources */,
-				EBF344941DD058B600CEEA30 /* StudentBean.m in Sources */,
-				EBF344881DD058B600CEEA30 /* CommentBean.m in Sources */,
-				EBF344981DD058B600CEEA30 /* UpdateViewController.m in Sources */,
-				EBF344721DD0588C00CEEA30 /* Base64.m in Sources */,
-				EBF344961DD058B600CEEA30 /* TestUserBean.m in Sources */,
-				EBF344901DD058B600CEEA30 /* NestedObjTestViewController.m in Sources */,
-				EBF3446E1DD0588C00CEEA30 /* AJDBObject.m in Sources */,
-				EBF3448C1DD058B600CEEA30 /* DogBean.m in Sources */,
-				EBF344921DD058B600CEEA30 /* QueryDataViewController.m in Sources */,
-				EBF344701DD0588C00CEEA30 /* AJSortFilter.m in Sources */,
-				EBF344571DD0584600CEEA30 /* AJRealmDBUITests.m in Sources */,
-				EBF3448A1DD058B600CEEA30 /* DatabaseTestViewController.m in Sources */,
-				EBF3449A1DD058B600CEEA30 /* WeiboStatusBean.m in Sources */,
-				EBF3448E1DD058B600CEEA30 /* MultiThreadViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EBF344541DD0584600CEEA30 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EBF344381DD0584600CEEA30 /* AJRealmDB */;
-			targetProxy = EBF344531DD0584600CEEA30 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EBF344451DD0584600CEEA30 /* Main.storyboard */ = {
@@ -533,36 +424,6 @@
 			};
 			name = Release;
 		};
-		EBF3445F1DD0584600CEEA30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AJRealmDB",
-				);
-				INFOPLIST_FILE = AJRealmDBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDBUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AJRealmDB;
-			};
-			name = Debug;
-		};
-		EBF344601DD0584600CEEA30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AJRealmDB",
-				);
-				INFOPLIST_FILE = AJRealmDBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDBUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AJRealmDB;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,14 +443,7 @@
 				EBF3445D1DD0584600CEEA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		EBF3445E1DD0584600CEEA30 /* Build configuration list for PBXNativeTarget "AJRealmDBUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EBF3445F1DD0584600CEEA30 /* Debug */,
-				EBF344601DD0584600CEEA30 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
