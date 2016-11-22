@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1639491DDDEA160083825A /* AJRealmDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1639481DDDEA160083825A /* AJRealmDBTests.m */; };
+		CC1639511DDDEAA10083825A /* DBWriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1639501DDDEAA10083825A /* DBWriteTests.m */; };
+		CC5FCC1C1DE1801800CB7514 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3449C1DD0598F00CEEA30 /* Realm.framework */; };
+		CC5FCC201DE1A9DD00CB7514 /* DBUpdateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5FCC1F1DE1A9DD00CB7514 /* DBUpdateTests.m */; };
+		CCF688E01DE3448800AD7E4F /* DBDeleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF688DF1DE3448800AD7E4F /* DBDeleteTests.m */; };
 		EBF3443E1DD0584600CEEA30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3443D1DD0584600CEEA30 /* main.m */; };
 		EBF344411DD0584600CEEA30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344401DD0584600CEEA30 /* AppDelegate.m */; };
 		EBF344471DD0584600CEEA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF344451DD0584600CEEA30 /* Main.storyboard */; };
@@ -31,7 +36,23 @@
 		EBF344A51DD05ADD00CEEA30 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF344A41DD05ADD00CEEA30 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC16394B1DDDEA160083825A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF344311DD0584600CEEA30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF344381DD0584600CEEA30;
+			remoteInfo = AJRealmDB;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CC1639461DDDEA160083825A /* AJRealmDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJRealmDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1639481DDDEA160083825A /* AJRealmDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJRealmDBTests.m; sourceTree = "<group>"; };
+		CC16394A1DDDEA160083825A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1639501DDDEAA10083825A /* DBWriteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBWriteTests.m; sourceTree = "<group>"; };
+		CC5FCC1F1DE1A9DD00CB7514 /* DBUpdateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUpdateTests.m; sourceTree = "<group>"; };
+		CCF688DF1DE3448800AD7E4F /* DBDeleteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDeleteTests.m; sourceTree = "<group>"; };
 		EBF344391DD0584600CEEA30 /* AJRealmDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJRealmDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF3443D1DD0584600CEEA30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBF3443F1DD0584600CEEA30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +96,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CC1639431DDDEA160083825A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5FCC1C1DE1801800CB7514 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF344361DD0584600CEEA30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,10 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC1639471DDDEA160083825A /* AJRealmDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC1639481DDDEA160083825A /* AJRealmDBTests.m */,
+				CC16394A1DDDEA160083825A /* Info.plist */,
+				CC1639501DDDEAA10083825A /* DBWriteTests.m */,
+				CC5FCC1F1DE1A9DD00CB7514 /* DBUpdateTests.m */,
+				CCF688DF1DE3448800AD7E4F /* DBDeleteTests.m */,
+			);
+			path = AJRealmDBTests;
+			sourceTree = "<group>";
+		};
 		EBF344301DD0584600CEEA30 = {
 			isa = PBXGroup;
 			children = (
 				EBF3443B1DD0584600CEEA30 /* AJRealmDB */,
+				CC1639471DDDEA160083825A /* AJRealmDBTests */,
 				EBF3443A1DD0584600CEEA30 /* Products */,
 				EBF3449F1DD059B000CEEA30 /* Frameworks */,
 			);
@@ -101,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF344391DD0584600CEEA30 /* AJRealmDB.app */,
+				CC1639461DDDEA160083825A /* AJRealmDBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +236,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CC1639451DDDEA160083825A /* AJRealmDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC16394D1DDDEA160083825A /* Build configuration list for PBXNativeTarget "AJRealmDBTests" */;
+			buildPhases = (
+				CC1639421DDDEA160083825A /* Sources */,
+				CC1639431DDDEA160083825A /* Frameworks */,
+				CC1639441DDDEA160083825A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC16394C1DDDEA160083825A /* PBXTargetDependency */,
+			);
+			name = AJRealmDBTests;
+			productName = AJRealmDBTests;
+			productReference = CC1639461DDDEA160083825A /* AJRealmDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EBF344381DD0584600CEEA30 /* AJRealmDB */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF3445B1DD0584600CEEA30 /* Build configuration list for PBXNativeTarget "AJRealmDB" */;
@@ -219,6 +280,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AbooJan;
 				TargetAttributes = {
+					CC1639451DDDEA160083825A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBF344381DD0584600CEEA30;
+					};
 					EBF344381DD0584600CEEA30 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -239,11 +305,19 @@
 			projectRoot = "";
 			targets = (
 				EBF344381DD0584600CEEA30 /* AJRealmDB */,
+				CC1639451DDDEA160083825A /* AJRealmDBTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC1639441DDDEA160083825A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF344371DD0584600CEEA30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +331,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC1639421DDDEA160083825A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1639491DDDEA160083825A /* AJRealmDBTests.m in Sources */,
+				CC5FCC201DE1A9DD00CB7514 /* DBUpdateTests.m in Sources */,
+				CCF688E01DE3448800AD7E4F /* DBDeleteTests.m in Sources */,
+				CC1639511DDDEAA10083825A /* DBWriteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF344351DD0584600CEEA30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +367,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CC16394C1DDDEA160083825A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF344381DD0584600CEEA30 /* AJRealmDB */;
+			targetProxy = CC16394B1DDDEA160083825A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		EBF344451DD0584600CEEA30 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -302,6 +395,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CC16394E1DDDEA160083825A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AJRealmDB",
+				);
+				INFOPLIST_FILE = AJRealmDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AJRealmDB.app/AJRealmDB";
+			};
+			name = Debug;
+		};
+		CC16394F1DDDEA160083825A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AJRealmDB",
+				);
+				INFOPLIST_FILE = AJRealmDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AJRealmDB.app/AJRealmDB";
+			};
+			name = Release;
+		};
 		EBF344591DD0584600CEEA30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +528,7 @@
 				INFOPLIST_FILE = AJRealmDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -419,6 +545,7 @@
 				INFOPLIST_FILE = AJRealmDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -427,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC16394D1DDDEA160083825A /* Build configuration list for PBXNativeTarget "AJRealmDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16394E1DDDEA160083825A /* Debug */,
+				CC16394F1DDDEA160083825A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBF344341DD0584600CEEA30 /* Build configuration list for PBXProject "AJRealmDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
