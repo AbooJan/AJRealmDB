@@ -1,9 +1,6 @@
 # AJRealmDB
 对Realm数据库的二次封装，方便使用
 
-运行Demo需要导入 `Realm` 数据库的静态包 `Realm.framework`，从官网下载。
-
-
 #### 使用文档
 
 1. 所有需要写入数据库的类需要继承自：`AJDBObject` 。  并且必须要实现方法: `primaryKey`，用来定义主键。
