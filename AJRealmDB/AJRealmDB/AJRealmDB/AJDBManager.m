@@ -27,6 +27,29 @@
     return instance;
 }
 
+
++ (void)setupConfigInfo:(AJDBConfig *)cfg
+{
+    if (cfg == nil) {
+        return;
+    }
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        // 数据库配置
+        RLMRealmConfiguration *rlmCfg = [RLMRealmConfiguration defaultConfiguration];
+        rlmCfg.schemaVersion = cfg.dbVer;
+        rlmCfg.migrationBlock = cfg.migrationBlock;
+        
+        if (cfg.encryptKey.length > 0) {
+            rlmCfg.encryptionKey = cfg.encryptKey;
+        }
+        
+        [self sharedInstance].realmConfig = rlmCfg;
+    });
+}
+
 + (void)configSecurityKey:(NSData *)secKey
 {
     if (secKey == nil || [secKey length] == 0) {
@@ -77,17 +100,17 @@
     [realm commitWriteTransaction];
 }
 
-+ (void)writeObjArray:(NSArray<__kindof AJDBObject *> *)objs
++ (void)writeObjs:(NSArray<__kindof AJDBObject *> *)objs
 {
     RLMRealm *realm = [[self sharedInstance] realm];
     [realm beginWriteTransaction];
-    [realm addOrUpdateObjectsFromArray:objs];
+    [realm addOrUpdateObjects:objs];
     [realm commitWriteTransaction];
 }
 
 #pragma mark - 更新
 
-+ (void)updateObj:(void (^)())updateBlock
++ (void)updateObj:(void (^)(void))updateBlock
 {
     RLMRealm *realm = [[self sharedInstance] realm];
     
@@ -104,6 +127,14 @@
     [realm beginWriteTransaction];
     [realm deleteObject:obj];
     [realm commitWriteTransaction];
+}
+
++ (void)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz
+{
+    AJDBObject *obj = [self queryObjWithPrimaryKey:primaryKey targetClass:clazz];
+    if (obj) {
+        [self deleteObj:obj];
+    }
 }
 
 + (void)deleteObjs:(NSArray<__kindof AJDBObject *> *)objs
@@ -133,7 +164,7 @@
     return resultArray;
 }
 
-+ (NSArray<__kindof AJDBObject *> *)queryObjWithPredicate:(NSPredicate *)predicate targetClass:(Class)clazz
++ (NSArray<__kindof AJDBObject *> *)queryObjsWithPredicate:(NSPredicate *)predicate targetClass:(Class)clazz
 {
     [AJDBManager checkClazz:clazz];
     
@@ -150,13 +181,14 @@
     return resultArray;
 }
 
-+ (NSArray<__kindof AJDBObject *> *)queryObjWithPredicate:(NSPredicate *)predicate sortFilter:(AJSortFilter *)sortFilter targetClass:(Class)clazz;
++ (NSArray<__kindof AJDBObject *> *)queryObjsWithPredicate:(NSPredicate *)predicate sortFilter:(AJSortFilter *)sortFilter targetClass:(Class)clazz;
 {
     [AJDBManager checkClazz:clazz];
     
     RLMRealm *realm = [[self sharedInstance] realm];
+    
     RLMResults<AJDBObject *> *queryResult = [[clazz objectsInRealm:realm withPredicate:predicate]
-                                             sortedResultsUsingProperty:sortFilter.sortPropertyName
+                                             sortedResultsUsingKeyPath:sortFilter.sortPropertyName
                                              ascending:sortFilter.ascending];
     
     NSMutableArray *resultArray = [NSMutableArray array];
@@ -170,7 +202,7 @@
     return resultArray;
 }
 
-+ (__kindof AJDBObject *)queryObjWithPrimaryKeyValue:(id)primaryKey targetClass:(Class)clazz;
++ (__kindof AJDBObject *)queryObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz;
 {
     [AJDBManager checkClazz:clazz];
     

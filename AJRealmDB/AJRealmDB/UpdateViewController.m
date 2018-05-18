@@ -60,7 +60,7 @@
         [dogArray addObject:dog1];
     }
     
-    [AJDBManager writeObjArray:dogArray];
+    [AJDBManager writeObjs:dogArray];
 }
 
 - (IBAction)deleteArrayBtnClick:(id)sender

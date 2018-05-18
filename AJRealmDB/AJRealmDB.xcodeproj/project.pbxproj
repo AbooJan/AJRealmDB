@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CEE80E3558FCDAEC69A7E5B /* libPods-AJRealmDBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF7F8C68F4A399EA1571BE /* libPods-AJRealmDBTests.a */; };
+		B8D508F20E9F8D622512B0F9 /* libPods-AJRealmDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F57B4AD159377143C87C4E4 /* libPods-AJRealmDB.a */; };
 		CC1639491DDDEA160083825A /* AJRealmDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1639481DDDEA160083825A /* AJRealmDBTests.m */; };
 		CC1639511DDDEAA10083825A /* DBWriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1639501DDDEAA10083825A /* DBWriteTests.m */; };
-		CC5FCC1C1DE1801800CB7514 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3449C1DD0598F00CEEA30 /* Realm.framework */; };
 		CC5FCC201DE1A9DD00CB7514 /* DBUpdateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5FCC1F1DE1A9DD00CB7514 /* DBUpdateTests.m */; };
 		CCF688E01DE3448800AD7E4F /* DBDeleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF688DF1DE3448800AD7E4F /* DBDeleteTests.m */; };
+		DC8C91CB20AEB89000E11550 /* AJDBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8C91C920AEB88F00E11550 /* AJDBConfig.m */; };
 		EBF3443E1DD0584600CEEA30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3443D1DD0584600CEEA30 /* main.m */; };
 		EBF344411DD0584600CEEA30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344401DD0584600CEEA30 /* AppDelegate.m */; };
 		EBF344471DD0584600CEEA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF344451DD0584600CEEA30 /* Main.storyboard */; };
@@ -31,9 +33,6 @@
 		EBF344951DD058B600CEEA30 /* TestUserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344821DD058B600CEEA30 /* TestUserBean.m */; };
 		EBF344971DD058B600CEEA30 /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344841DD058B600CEEA30 /* UpdateViewController.m */; };
 		EBF344991DD058B600CEEA30 /* WeiboStatusBean.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF344861DD058B600CEEA30 /* WeiboStatusBean.m */; };
-		EBF3449D1DD0598F00CEEA30 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3449C1DD0598F00CEEA30 /* Realm.framework */; };
-		EBF344A21DD059B000CEEA30 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF344A01DD059B000CEEA30 /* libc++.tbd */; };
-		EBF344A51DD05ADD00CEEA30 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF344A41DD05ADD00CEEA30 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D25BC2961F4C055B40B8339 /* Pods-AJRealmDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJRealmDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-AJRealmDB/Pods-AJRealmDB.release.xcconfig"; sourceTree = "<group>"; };
+		4F57B4AD159377143C87C4E4 /* libPods-AJRealmDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJRealmDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607113315ED50A4DDAEF989E /* Pods-AJRealmDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJRealmDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AJRealmDB/Pods-AJRealmDB.debug.xcconfig"; sourceTree = "<group>"; };
+		71AF7F8C68F4A399EA1571BE /* libPods-AJRealmDBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AJRealmDBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1639461DDDEA160083825A /* AJRealmDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJRealmDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1639481DDDEA160083825A /* AJRealmDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJRealmDBTests.m; sourceTree = "<group>"; };
 		CC16394A1DDDEA160083825A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC1639501DDDEAA10083825A /* DBWriteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBWriteTests.m; sourceTree = "<group>"; };
 		CC5FCC1F1DE1A9DD00CB7514 /* DBUpdateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUpdateTests.m; sourceTree = "<group>"; };
 		CCF688DF1DE3448800AD7E4F /* DBDeleteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDeleteTests.m; sourceTree = "<group>"; };
+		D73CC38D57CE5822FFB7C5CA /* Pods-AJRealmDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJRealmDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AJRealmDBTests/Pods-AJRealmDBTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC8C91C920AEB88F00E11550 /* AJDBConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDBConfig.m; sourceTree = "<group>"; };
+		DC8C91CA20AEB88F00E11550 /* AJDBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDBConfig.h; sourceTree = "<group>"; };
+		E7B63EC41FEFFB17AD33912E /* Pods-AJRealmDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJRealmDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AJRealmDBTests/Pods-AJRealmDBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBF344391DD0584600CEEA30 /* AJRealmDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJRealmDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF3443D1DD0584600CEEA30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBF3443F1DD0584600CEEA30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,7 +96,6 @@
 		EBF344841DD058B600CEEA30 /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
 		EBF344851DD058B600CEEA30 /* WeiboStatusBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboStatusBean.h; sourceTree = "<group>"; };
 		EBF344861DD058B600CEEA30 /* WeiboStatusBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboStatusBean.m; sourceTree = "<group>"; };
-		EBF3449C1DD0598F00CEEA30 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		EBF344A01DD059B000CEEA30 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		EBF344A11DD059B000CEEA30 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		EBF344A41DD05ADD00CEEA30 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -100,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5FCC1C1DE1801800CB7514 /* Realm.framework in Frameworks */,
+				7CEE80E3558FCDAEC69A7E5B /* libPods-AJRealmDBTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +114,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF344A51DD05ADD00CEEA30 /* libz.tbd in Frameworks */,
-				EBF344A21DD059B000CEEA30 /* libc++.tbd in Frameworks */,
-				EBF3449D1DD0598F00CEEA30 /* Realm.framework in Frameworks */,
+				B8D508F20E9F8D622512B0F9 /* libPods-AJRealmDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE497A202F62FECC87E4D6D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				607113315ED50A4DDAEF989E /* Pods-AJRealmDB.debug.xcconfig */,
+				2D25BC2961F4C055B40B8339 /* Pods-AJRealmDB.release.xcconfig */,
+				E7B63EC41FEFFB17AD33912E /* Pods-AJRealmDBTests.debug.xcconfig */,
+				D73CC38D57CE5822FFB7C5CA /* Pods-AJRealmDBTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC1639471DDDEA160083825A /* AJRealmDBTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 				CC1639471DDDEA160083825A /* AJRealmDBTests */,
 				EBF3443A1DD0584600CEEA30 /* Products */,
 				EBF3449F1DD059B000CEEA30 /* Frameworks */,
+				AE497A202F62FECC87E4D6D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,7 +185,6 @@
 				EBF344481DD0584600CEEA30 /* Assets.xcassets */,
 				EBF3444A1DD0584600CEEA30 /* LaunchScreen.storyboard */,
 				EBF3444D1DD0584600CEEA30 /* Info.plist */,
-				EBF3449C1DD0598F00CEEA30 /* Realm.framework */,
 				EBF3443C1DD0584600CEEA30 /* Supporting Files */,
 			);
 			path = AJRealmDB;
@@ -186,6 +201,8 @@
 		EBF344611DD0588C00CEEA30 /* AJRealmDB */ = {
 			isa = PBXGroup;
 			children = (
+				DC8C91CA20AEB88F00E11550 /* AJDBConfig.h */,
+				DC8C91C920AEB88F00E11550 /* AJDBConfig.m */,
 				EBF344621DD0588C00CEEA30 /* AJDBManager.h */,
 				EBF344631DD0588C00CEEA30 /* AJDBManager.m */,
 				EBF344641DD0588C00CEEA30 /* AJDBObject.h */,
@@ -229,6 +246,8 @@
 				EBF344A41DD05ADD00CEEA30 /* libz.tbd */,
 				EBF344A01DD059B000CEEA30 /* libc++.tbd */,
 				EBF344A11DD059B000CEEA30 /* libc.tbd */,
+				4F57B4AD159377143C87C4E4 /* libPods-AJRealmDB.a */,
+				71AF7F8C68F4A399EA1571BE /* libPods-AJRealmDBTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC16394D1DDDEA160083825A /* Build configuration list for PBXNativeTarget "AJRealmDBTests" */;
 			buildPhases = (
+				030AE85EA8747161F277CAFE /* [CP] Check Pods Manifest.lock */,
 				CC1639421DDDEA160083825A /* Sources */,
 				CC1639431DDDEA160083825A /* Frameworks */,
 				CC1639441DDDEA160083825A /* Resources */,
@@ -258,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF3445B1DD0584600CEEA30 /* Build configuration list for PBXNativeTarget "AJRealmDB" */;
 			buildPhases = (
+				19708730FFA560F9EB16024B /* [CP] Check Pods Manifest.lock */,
 				EBF344351DD0584600CEEA30 /* Sources */,
 				EBF344361DD0584600CEEA30 /* Frameworks */,
 				EBF344371DD0584600CEEA30 /* Resources */,
@@ -277,7 +298,7 @@
 		EBF344311DD0584600CEEA30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = AbooJan;
 				TargetAttributes = {
 					CC1639451DDDEA160083825A = {
@@ -287,7 +308,8 @@
 					};
 					EBF344381DD0584600CEEA30 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = N9D9Y52FAG;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -330,6 +352,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030AE85EA8747161F277CAFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AJRealmDBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19708730FFA560F9EB16024B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AJRealmDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC1639421DDDEA160083825A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,6 +413,7 @@
 				EBF344971DD058B600CEEA30 /* UpdateViewController.m in Sources */,
 				EBF344891DD058B600CEEA30 /* DatabaseTestViewController.m in Sources */,
 				EBF3446B1DD0588C00CEEA30 /* AJDBManager.m in Sources */,
+				DC8C91CB20AEB89000E11550 /* AJDBConfig.m in Sources */,
 				EBF344911DD058B600CEEA30 /* QueryDataViewController.m in Sources */,
 				EBF3446D1DD0588C00CEEA30 /* AJDBObject.m in Sources */,
 				EBF344991DD058B600CEEA30 /* WeiboStatusBean.m in Sources */,
@@ -397,6 +459,7 @@
 /* Begin XCBuildConfiguration section */
 		CC16394E1DDDEA160083825A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B63EC41FEFFB17AD33912E /* Pods-AJRealmDBTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -413,6 +476,7 @@
 		};
 		CC16394F1DDDEA160083825A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D73CC38D57CE5822FFB7C5CA /* Pods-AJRealmDBTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -436,15 +500,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -484,15 +557,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -519,35 +601,44 @@
 		};
 		EBF3445C1DD0584600CEEA30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607113315ED50A4DDAEF989E /* Pods-AJRealmDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N9D9Y52FAG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AJRealmDB",
 				);
 				INFOPLIST_FILE = AJRealmDB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c4e53ee7-af3f-4fa4-bf0f-6a39aec1a270";
+				PROVISIONING_PROFILE_SPECIFIER = common_dev_profile;
 			};
 			name = Debug;
 		};
 		EBF3445D1DD0584600CEEA30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D25BC2961F4C055B40B8339 /* Pods-AJRealmDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AJRealmDB",
 				);
 				INFOPLIST_FILE = AJRealmDB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboo.AJRealmDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

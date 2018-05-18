@@ -197,7 +197,7 @@
         [studentArray addObject:student];
     }
     
-    [AJDBManager writeObjArray:studentArray];
+    [AJDBManager writeObjs:studentArray];
     
     [self refreshData];
 }

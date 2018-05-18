@@ -9,16 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "AJDBObject.h"
 #import "AJSortFilter.h"
+#import "AJDBConfig.h"
 
 @interface AJDBManager : NSObject
 
-
 /**
- * 设置数据库加密Key,全局只需设置一次。如果不设置，默认不加密
- * 一个数据库只对应一个Key
- @param secKey 加密Key
+ * 数据库初始化配置, 全局只会执行一次
+ * @param cfg 配置信息
  */
-+ (void)configSecurityKey:(NSData *)secKey;
++ (void)setupConfigInfo:(AJDBConfig *)cfg;
 
 /**
  *  写入一条数据
@@ -32,14 +31,14 @@
  *
  *  @param objs 数组
  */
-+ (void)writeObjArray:(NSArray<__kindof AJDBObject *> *)objs;
++ (void)writeObjs:(NSArray<__kindof AJDBObject *> *)objs;
 
 /**
  *  更新一条数据，更新数据必须在block中执行
  *
  *  @param updateBlock 在block中更新数据
  */
-+ (void)updateObj:(void (^)())updateBlock;
++ (void)updateObj:(void (^)(void))updateBlock;
 
 /**
  *  在数据库中删除目标数据
@@ -47,6 +46,14 @@
  *  @param obj 目标数据
  */
 + (void)deleteObj:(__kindof AJDBObject *)obj;
+
+/**
+ *  在数据库中目标主键数据
+ *
+ * @param primaryKey 主键
+ * @param clazz 目标类
+ */
++ (void)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz;
 
 /**
  *  在数据库中删除目标数组数据
@@ -72,7 +79,7 @@
  *
  *  @return 查询结果
  */
-+ (NSArray<__kindof AJDBObject *> *)queryObjWithPredicate:(NSPredicate *)predicate targetClass:(Class)clazz;
++ (NSArray<__kindof AJDBObject *> *)queryObjsWithPredicate:(NSPredicate *)predicate targetClass:(Class)clazz;
 
 /**
  *  根据断言条件查询数据，并进行排序
@@ -83,7 +90,7 @@
  *
  *  @return 查询结果
  */
-+ (NSArray<__kindof AJDBObject *> *)queryObjWithPredicate:(NSPredicate *)predicate sortFilter:(AJSortFilter *)sortFilter targetClass:(Class)clazz;
++ (NSArray<__kindof AJDBObject *> *)queryObjsWithPredicate:(NSPredicate *)predicate sortFilter:(AJSortFilter *)sortFilter targetClass:(Class)clazz;
 
 /**
  *  根据主键查询目标数据
@@ -93,7 +100,7 @@
  *
  *  @return 查询结果
  */
-+ (__kindof AJDBObject *)queryObjWithPrimaryKeyValue:(id)primaryKey targetClass:(Class)clazz;
++ (__kindof AJDBObject *)queryObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz;
 
 /**
  *  清空数据库

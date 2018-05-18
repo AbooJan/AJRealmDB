@@ -27,7 +27,27 @@
     
     NSLog(@"#secKey-data#: %@", seckey); // 在电脑上读取加密后的数据库时可以使用这串16进制Key
     
-//    [AJDBManager configSecurityKey:seckey];
+    
+    // 数据库配置
+    AJDBConfig *cfg = [AJDBConfig new];
+    cfg.encryptKey = seckey;
+    cfg.dbVer = 1000;
+    cfg.migrationBlock = ^(RLMMigration * _Nonnull migration, uint64_t oldSchemaVersion) {
+        // 数据库版本合并
+        if (oldSchemaVersion < 1000) {
+            // The enumerateObjects:block: method iterates
+            // over every 'Person' object stored in the Realm file
+//            [migration enumerateObjects:Person.className
+//                                  block:^(RLMObject *oldObject, RLMObject *newObject) {
+//
+//                                      // combine name fields into a single field
+//                                      newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@",
+//                                                                oldObject[@"firstName"],
+//                                                                oldObject[@"lastName"]];
+//                                  }];
+        }
+    };
+    [AJDBManager setupConfigInfo:cfg];
     
     return YES;
 }
