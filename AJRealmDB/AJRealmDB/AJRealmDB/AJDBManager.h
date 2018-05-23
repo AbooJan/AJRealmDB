@@ -23,44 +23,65 @@
  *  写入一条数据
  *
  *  @param obj 目标数据
+ *
+ *  @return 执行结果
  */
-+ (void)writeObj:(__kindof AJDBObject *)obj;
++ (BOOL)writeObj:(__kindof AJDBObject *)obj;
 
 /**
  *  批量写入
  *
  *  @param objs 数组
+ *
+ *  @return 执行结果
  */
-+ (void)writeObjs:(NSArray<__kindof AJDBObject *> *)objs;
++ (BOOL)writeObjs:(NSArray<__kindof AJDBObject *> *)objs;
 
 /**
  *  更新一条数据，更新数据必须在block中执行
  *
  *  @param updateBlock 在block中更新数据
+ *
+ *  @return 执行结果
  */
-+ (void)updateObj:(void (^)(void))updateBlock;
++ (BOOL)updateObj:(void (^)(void))updateBlock;
 
 /**
  *  在数据库中删除目标数据
  *
  *  @param obj 目标数据
+ *
+ *  @return 执行结果
  */
-+ (void)deleteObj:(__kindof AJDBObject *)obj;
++ (BOOL)deleteObj:(__kindof AJDBObject *)obj;
 
 /**
  *  在数据库中目标主键数据
  *
  * @param primaryKey 主键
  * @param clazz 目标类
+ *
+ * @return 执行结果
  */
-+ (void)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz;
++ (BOOL)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz;
 
 /**
  *  在数据库中删除目标数组数据
  *
  *  @param objs 需要删除的数据数组
+ *
+ *  @return 执行结果
  */
-+ (void)deleteObjs:(NSArray<__kindof AJDBObject *> *)objs;
++ (BOOL)deleteObjs:(NSArray<__kindof AJDBObject *> *)objs;
+
+/**
+ * 在数据库中删除所有目标类对应的数据
+ *
+ * @param clazz 目标类
+ *
+ * @return 执行结果
+ */
++ (BOOL)deleteAllTargetObjs:(Class)clazz;
 
 /**
  *  查询目标数据模型的所有存储数据
@@ -104,7 +125,9 @@
 
 /**
  *  清空数据库
+ *
+ *  @return 执行结果
  */
-+ (void)clear;
++ (BOOL)clear;
 
 @end

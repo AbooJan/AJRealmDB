@@ -92,57 +92,65 @@
 
 #pragma mark - 写入
 
-+ (void)writeObj:(__kindof AJDBObject *)obj
++ (BOOL)writeObj:(__kindof AJDBObject *)obj
 {
     RLMRealm *realm = [[self sharedInstance] realm];
-    [realm beginWriteTransaction];
-    [realm addOrUpdateObject:obj];
-    [realm commitWriteTransaction];
+    return [realm transactionWithBlock:^{
+        [realm addOrUpdateObject:obj];
+    } error:nil];
 }
 
-+ (void)writeObjs:(NSArray<__kindof AJDBObject *> *)objs
++ (BOOL)writeObjs:(NSArray<__kindof AJDBObject *> *)objs
 {
     RLMRealm *realm = [[self sharedInstance] realm];
-    [realm beginWriteTransaction];
-    [realm addOrUpdateObjects:objs];
-    [realm commitWriteTransaction];
+    return [realm transactionWithBlock:^{
+        [realm addOrUpdateObjects:objs];
+    } error:nil];
 }
 
 #pragma mark - 更新
 
-+ (void)updateObj:(void (^)(void))updateBlock
++ (BOOL)updateObj:(void (^)(void))updateBlock
 {
     RLMRealm *realm = [[self sharedInstance] realm];
     
-    [realm transactionWithBlock:^{
+    return [realm transactionWithBlock:^{
         updateBlock();
-    }];
+    } error:nil];
 }
 
 #pragma mark - 删除
 
-+ (void)deleteObj:(__kindof AJDBObject *)obj
++ (BOOL)deleteObj:(__kindof AJDBObject *)obj
 {
     RLMRealm *realm = [[self sharedInstance] realm];
-    [realm beginWriteTransaction];
-    [realm deleteObject:obj];
-    [realm commitWriteTransaction];
+    return [realm transactionWithBlock:^{
+        [realm deleteObject:obj];
+    } error:nil];
 }
 
-+ (void)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz
++ (BOOL)deleteObjWithPrimaryKey:(id)primaryKey targetClass:(Class)clazz
 {
     AJDBObject *obj = [self queryObjWithPrimaryKey:primaryKey targetClass:clazz];
     if (obj) {
-        [self deleteObj:obj];
+        return [self deleteObj:obj];
+    } else {
+        return NO;
     }
 }
 
-+ (void)deleteObjs:(NSArray<__kindof AJDBObject *> *)objs
++ (BOOL)deleteObjs:(NSArray<__kindof AJDBObject *> *)objs
 {
     RLMRealm *realm = [[self sharedInstance] realm];
-    [realm beginWriteTransaction];
-    [realm deleteObjects:objs];
-    [realm commitWriteTransaction];
+    return [realm transactionWithBlock:^{
+        [realm deleteObjects:objs];
+    } error:nil];
+}
+
++ (BOOL)deleteAllTargetObjs:(Class)clazz
+{
+    NSArray *objs = [self queryAllObj:clazz];
+    return [self deleteObjs:objs];
 }
 
 #pragma mark - 查询
@@ -213,12 +221,12 @@
 }
 
 #pragma mark - 清空数据库
-+ (void)clear
++ (BOOL)clear
 {
     RLMRealm *realm = [[self sharedInstance] realm];
-    [realm beginWriteTransaction];
-    [realm deleteAllObjects];
-    [realm commitWriteTransaction];
+    return [realm transactionWithBlock:^{
+        [realm deleteAllObjects];
+    } error:nil];
 }
 
 @end
